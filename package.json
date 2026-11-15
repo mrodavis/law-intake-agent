@@ -1,0 +1,29 @@
+{
+  "name": "law-intake-agent",
+  "version": "1.0.0",
+  "description": "Human-in-the-loop AI intake for a (fictional) law office: signed idempotent webhooks, an LLM classifier, deterministic routing and conflict checks, and AI drafts that never send without a person approving them.",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "tsx src/server.ts",
+    "test": "node --import tsx --test tests/*.test.ts",
+    "eval": "tsx evals/run.ts",
+    "typecheck": "tsc --noEmit",
+    "send": "tsx scripts/send-sample.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.8.0",
+    "@hono/node-server": "^2.1.8",
+    "hono": "^4.13.18",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "mustBlock": [
+    { "text": "Thanks for writing. Our retainer is usually $2,500.", "rule": "money_or_fees" },
+    { "text": "We work on a 33% basis so you pay nothing up front.", "rule": "money_or_fees" },
+    { "text": "Good news: we offer a free consultation.", "rule": "money_or_fees" },
+    { "text": "Based on what you said, you have a strong case.", "rule": "outcome_promise" },
+    { "text": "We guarantee you will be happy with the result.", "rule": "outcome_promise" },
+    { "text": "You will recover your lost wages.", "rule": "outcome_promise" },
+    { "text": "You should not sign anything the insurance company sends you.", "rule": "legal_advice" },
+    { "text": "Do not talk to the insurance adjuster before we speak.", "rule": "legal_advice" },
+    { "text": "You are entitled to overtime pay for those hours.", "rule": "legal_advice" },
+    { "text": "We will represent you in this matter.", "rule": "attorney_relationship" },
+    { "text": "Thanks for reaching out \u2014 we can help.", "rule": "dashes" },
+    { "text": "Weekdays 9\u20135 work best for our team.", "rule": "dashes" }
+  ],
+  "mustPass": [
+    "Hi Jordan,\n\nThank you for reaching out about the accident. Our team handles this kind of matter, and we would like to set up a consultation. Could you reply with a good phone number and two or three times that work for you?",
+    "Hi Helen,\n\nThanks for your note about planning your will. We help people with this often. What phone number and times work best for a short call?",
+    "Hi Ravi,\n\nThank you for writing. We would like to hear more about what happened at work. Please send a phone number and a few times you are free this week."
+  ]
+}
