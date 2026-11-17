@@ -4,7 +4,7 @@ Human-in-the-loop AI email intake for a **fictional** law office, Hale & Ortiz L
 
 Inbound email arrives as a **signed, idempotent webhook**. Claude **labels** each message (category, practice area, urgency, parties, minors, injection attempts) as validated structured output. **Deterministic, unit-tested code** then runs the conflict check, decides the route and checks any AI-written reply against hard guardrails. The AI only drafts replies for clean, routine, in-scope new matters, and **nothing is sent until a person approves it**. Everything else goes straight to a person with the reasons attached.
 
-> All names, clients, matters and emails here are invented. The ideas come from AI lead-intake work on a production platform I built and run for a service business, rebuilt from scratch for a different industry; none of its code, prompts or data are in this repo. Nothing here is legal advice or a compliance claim.
+> All names, clients, matters and emails here are invented. The design mirrors an email lead pipeline I built and run in production for a service business: signed webhooks, a retry-or-fail status contract, idempotency per message, a dry-run mode, an LLM classifier with a replay eval, client matching by sender address only, and AI-drafted replies held for a person's approval. This repo rebuilds those patterns from scratch for a different industry; none of the production code, prompts or data are in it. Nothing here is legal advice or a compliance claim.
 
 ```mermaid
 flowchart LR
